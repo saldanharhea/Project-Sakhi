@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<title>Sakhi: Home Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script>
+function myFunction() {
+    var x = document.getElementById("new_preg");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+<body>
+
+<div class="w3-container w3-padding-large">
+	<div class="w3-container w3-margin-left w3-margin-right w3-margin-top" >
+	 	<div class="w3-col m4 l3">
+			<div class="w3-dropdown-click">
+			    <button  class="w3-button">Register New Pregnancy</button>
+			    <div id="new_preg" class="w3-dropdown-content w3-bar-block w3-border">
+			      <a href="mother_reg.html" class="w3-bar-item w3-button">New Mother</a>
+			      <a href="preganancy_details.html" class="w3-bar-item w3-button">Registered Mother</a>
+			    </div>
+			  </div>
+		</div>
+		<div class="w3-col m8 l9">
+			
+		</div>
+	</div>
+</div>
+
+</body>
+</html> 

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<title>Sakhi-Info-HN</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<link rel="shortcut icon" href="img/re.ico" />
+
+
+
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+.btn:hover {
+    background-color: yellow;
+}
+
+
+@font-face {
+        font-family: "Sakhi";
+        src: url(SAMAN___.TTF);
+}
+
+
+@font-face {
+        font-family: "Dev";
+        src: url(dev.ttf);
+}
+
+</style>
+
+<body style="background-color:#FFFBDC">
+
+
+<script src="http://code.responsivevoice.org/responsivevoice.js">
+
+</script>
+
+<!-- Header -->
+
+    <div class=" " style="background-color:#253657;margin:0px 15px 0px 15px;color:#FFF9DF;position:relative">
+      
+    <img src="img/23.png" alt="logo" class="w3-display-topleft " style="margin:0% 0% 0% 5%;padding-top: 10px">
+
+    <span style="position:relative;left:10%;font-family:Sakhi;color:#FFF9DF;;font-size:48px" >
+Sakhi</span>
+  
+    <span style="position:absolute;right:7%;font-weight: bold;"><button class="w3-button  btn w3-round-large w3-margin  " style="background-color:#F17D57;color:#253657;font-family: Dev;padding:10px;"> समस्या के बारे में जानकारी</button><a href="infoEN.html" style="color:#72E8FF;text-decoration: none;">EN</a></span>
+    
+</div>
+   
+
+
+
+<div class=" w3-center" style="background-color:#253657;margin:0px 15px 0px 15px;color:#FFF9DF;font-family:Dev;">
+     <br><br><br><br>
+    <span class="w3-xxxlarge"> शिशु, बच्चे और मातृ मृत्यु दर को कम करें</span>
+    <br><br><br><br><br><br>
+</div>
+
+
+
+  <div class="w3-container " >
+    
+  
+  <img src="img/i3.jpg" style="width:100%">
+
+  </div>
+
+
+
+<div class=" w3-center" style="background-color:#FFF9DF;margin:0px 15px 0px 15px;color:#253657;font-family:Toppan Bunkyu Midashi Gothic;">
+     <br><br><br><br>
+    <span class="w3-xlarge"> सालाना, यह अनुमान है कि ४४,००० महिलाओं को रोकने के कारण भारत में गर्भावस्था से संबंधित कारणों से मर जाता है. </span>
+    <br><br><br><br><br><br>
+</div>
+
+
+
+
+
+<div class="w3-container" style="background-color:#B33655;margin:0px 15px 0px 15px;color:#FFF9DF;font-family:Dev;">
+     <br><br><br>
+     <div class="w3-center">
+     <button id="b1" onclick="voice()"  class=" butt js--triggerAnimation w3-button w3-center  w3-round-large w3-margin" style="background-color:#B33655;font-size: 22px;border: 2px solid #FFF9DF;color:#FFF9DF;"><i class="fa fa-assistive-listening-systems display:inline" id="Btn1"></i>.     पढ़ कर सुनाएं</button>
+
+
+     <div  id="b2" onclick="stopVoice()" style="display:none">
+     <button   class=" butt js--triggerAnimation w3-button w3-center  w3-round-large w3-margin" style="background-color:#B33655;font-size: 22px;border: 2px solid #FFF9DF;color:#FFF9DF;"><i class="fa fa-volume-off" id="Btn1"></i>.    पढ़ना बंद करो</button>
+   </div>
+
+
+   </div>
+   <script type="text/javascript">
+    function voice() {
+    document.getElementById("b2").style.display="inline";
+    document.getElementById("b1").style.display="none";
+
+    responsiveVoice.speak(" kuposhan ke kaaran bachchon mein kaee mauton ka kaaran banata hai. 472,000,000 bachchon (2011 janaganana) mein, 97,000,000 kam khoon aur paushtik hain. bachchon ke lie paanch saal ya chhote, 40% ke kareeb vajan aur kam barbaad kar rahe hain aur 42.4% vajan rahe hain. aankade bataate hain ki naveenatam enepheches -4 kaha gaya hai ki 11 raajyon ke 9 sarvekshanon mein se 2 ankon kee baal mrtyu dar saalaana saksham nahin ho sakatee hai aur 40 bachchon mein se 1000 bachchon ke lie apanee pahalee jayantee manaane mana nahin hai .", "Hindi Female", {rate: 0.9});
+      
+      
+
+
+}
+   </script>
+
+   <script type="text/javascript">
+
+      function stopVoice() {
+    responsiveVoice.cancel();
+    document.getElementById("b1").style.display="inline";
+    document.getElementById("b2").style.display="none";
+}
+   </script>
+
+    <span  style="font-size:1.5em;text-align: justify"> <p style="margin:0px 90px">कुपोषण के कारण बच्चों में कई मौतों का कारण बनता है. ४७२,०००,००० बच्चों (२०११ जनगणना) में,  ९७,०००,००० कम खून और पौष्टिक हैं. बच्चों के लिए पांच साल या छोटे, ४०% के करीब (वास्तव में ३८.७%) (उम्र के लिए सामान्य ऊंचाई से नीचे), १९.८% (वजन और कम) बर्बाद कर रहे हैं और ४२.४% वजन रहे हैं. आंकड़ों से पता चला नवीनतम NFHS-4, कहा गया है कि 11 राज्यों के नौ सर्वेक्षण से बाहर भी 2 अंक सालाना द्वारा शिशु मृत्यु दर को कम करने में सक्षम नहीं किया गया है. और वह, ४० बाहर १००० शिशुओं के लिए अपने पहले जन्मदिन का जश्न मनाने नहीं मिलता.</p>
+
+<p style="margin:30px 90px">जबकि कुपोषण और शिशु मृत्यु दर अधिक बनी हुई है, बच्चों के लिए आवंटित बजट, जो कि भारत की आबादी का 40% कम है, केवल 4% में रहता है। उदाहरण के लिए, बिहार में दामोदर मोहली के गांव में, गांव में एकमात्र आंगनवाड़ी पिछले 6 महीनों से गैर-कार्यात्मक रही है। आंगनवाड़ी कार्यकर्ता को इस अवधि के लिए उसका वेतन नहीं मिला है, और भोजन और दवाओं की कमी के कारण केंद्र नहीं खोलता है। बच्चों के परिणामस्वरूप पीड़ित हैं।
+</p></span>
+    <br><br><br><br><br><br>
+</div>
+
+
+<div class=" w3-center" style="background-color:#FFF9DF;margin:0px 15px 0px 15px;color:#253657;font-family:Dev;">
+     <br><br><br><br>
+    <span class="w3-xlarge"><div class="w3-center">कुपोषण को रोकने और जड़ से उन्मूलन के लिए सखी के प्रयासों को निम्नलिखित पर केंद्रित है.</div>
+<p style="margin:20px 90px;font-family:Klee;text-align: justify;" >
+गर्भवती मां, क्योंकि पूर्व प्रसवपूर्व देखभाल, पर्याप्त भोजन और समय पर स्वास्थ्य जांच, एक गर्भवती महिला फिट होती है और एक स्वस्थ बच्चे को जन्म देती है। इसके बिना वह अपने अशुभ बच्चे को उसके स्वास्थ्य के बदले स्थानांतरित करती है, और कुपोषण का एक चक्र सेट करती है।<p>
+
+<p style="margin:20px 90px;font-family:Klee;text-align:justify;" >
+उचित प्रतिरक्षण प्रक्रिया, चूंकि एक बच्चे के जीवन के पहले दो वर्षों के दौरान स्वास्थ्य देखभाल की कमी, बीमार स्वास्थ्य के जीवन भर में योगदान दे सकता है। समय पर पोलियो बूँदें, प्रतिरक्षण और निगरानी के विकास, कुपोषण को रोकने के लिए महत्वपूर्ण हैं।
+</p>
+
+<p style="margin:20px 90px;font-family:Klee;text-align: justify;" >
+पौष्टिक पोषण क्योंकि यह भूख को खिलाने के लिए पर्याप्त नहीं है आयोडीन, लोहा और विटामिन जैसे आवश्यक माइक्रोन्यूट्रेंट्स के बिना, बच्चों को मस्तिष्क क्षति, रात अंधापन, सुर्खियां, एनीमिया और यहां तक ​​कि दिल की विफलता भी होती है।</p>
+ </span>
+    <br><br><br><br><br><br>
+</div>
+
+
+
+
+<!-- Footer -->
+
+<div class="w3-container w3-padding-32  w3-center" style="background-color:#253657;margin:0px 15px">
+  
+  <a href="#" class="w3-button  btn w3-round-large w3-margin" style="background-color:#253657;font-size: 22px;border: 2px solid #FFF9DF;color:#FFF9DF;"><i class="fa fa-arrow-up w3-margin-right"></i>     &nbsp;ऊपर जाएं</a>
+  
+</div>
+
+
+
+
+</body>
+</html>
